@@ -1,0 +1,44 @@
+{
+	"name": "@costaline/craco-plugin-stylus",
+	"version": "0.1.0",
+	"author": "Constantine Zubarev <kv.zubarev@gmail.com>",
+	"description": "Add stylus to CRA",
+	"keywords": [
+		"react",
+		"cra",
+		"craco",
+		"stylus"
+	],
+	"license": "ISC",
+	"homepage": "https://github.com/costaline/craco-plugin-stylus#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/costaline/craco-plugin-stylus.git"
+	},
+	"bugs": {
+		"url": "https://github.com/costaline/craco-plugin-stylus/issues"
+	},
+	"main": "lib/index.cjs.js",
+	"module": "lib/index.esm.js",
+	"files": [
+		"lib",
+		"src"
+	],
+	"scripts": {
+		"dev": "rollup -c -w",
+		"build": "rollup -c"
+	},
+	"dependencies": {
+		"stylus-loader": "^7.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.17.5",
+		"@babel/preset-env": "^7.16.11",
+		"@rollup/plugin-babel": "^5.3.1",
+		"rollup": "^2.68.0",
+		"rollup-plugin-clear": "^2.0.7"
+	},
+	"peerDependencies": {
+		"react-scripts": "^5.0.1"
+	}
+}
